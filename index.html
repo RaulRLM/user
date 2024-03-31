@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+            margin: 0; /* Asegura que no haya margen alrededor del cuerpo */
+            height: 100vh; /* Establece la altura del cuerpo al 100% de la ventana gráfica */
+            display: flex; /* Usa el modelo de caja flexible */
+            justify-content: center; /* Centra horizontalmente los elementos */
+            align-items: center; /* Centra verticalmente los elementos */
+        }
+        div {
+            background-image: url('reg1.png'); /* URL de la imagen */
+            background-size: contain; /* Ajustar la imagen para que quepa dentro del div */
+            background-position: center; /* Centra la imagen dentro del div */
+            background-repeat: no-repeat; /* Evita que la imagen se repita */
+            height: 80vh; /* Establece la altura del div al 80% de la ventana gráfica */
+            width: 80vw; /* Establece el ancho del div al 80% del ancho de la ventana gráfica */
+            box-sizing: border-box; /* Incluir el padding en el tamaño total del div */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1 {
+            font-weight: bold;
+            margin-top: 145px;
+            font-size:larger
+
+        }
+        input:nth-of-type(1) {
+            background-color: transparent;
+            margin-bottom: 15px; /* Espacio entre los campos */
+            padding: 10px; /* Añadir espacio interno */
+            font-size: 16px; /* Tamaño de fuente */
+            border: none;
+            width: 40%;
+            text-align: center; /* Centra el texto del placeholder */
+            position: relative;
+            top: -11px; /* Ajusta la posición vertical */
+
+
+        }
+        input:nth-of-type(2) {
+            background-color: transparent;
+            font-size: 16px; /* Tamaño de fuente */
+            border: none;  
+            width: 40%;   
+            text-align: center; /* Centra el texto del placeholder */
+            outline: none; /* Elimina el borde de enfoque */
+            position: absolute; /* Establece posición absoluta */
+            top: 291px;
+  
+
+          }
+        
+          ::placeholder {
+            font-weight: bold; /* Aplica negrita al texto del placeholder */
+        }
+        button {
+            background-color: #885F31;
+            height: 40px;
+            width: 155px;
+            margin-top: 14.5%;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: large;
+        }
+
+
+    </style>
+</head>
+<body>
+
+
+    <div>
+        <h1> Iniciar sesió</h1>
+        <input type="text" placeholder="Usuario">
+        <input type="password" placeholder="Contraseña">
+        <button> Entrar </button>
+
+
+
+        
+    </div>
+</body>
+</html>
